@@ -6,10 +6,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HTML/CSS PARALLAX EFFECT</title>
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/media.css">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     </head>
     <body>
-        <section class="img-sec1"></section>
+        <section class="img-sec1">
+            <section class="header">
+                <nav>
+                    <a href="home.html"><img src="assets/images/logo.png" alt=""></a>
+                    <div class="nav-links" id="navLinks">
+                        <i class="fa fa-times" onclick="hideMenu()"></i>
+                        <ul>
+                            <li><a href="#">HOME</a></li>
+                            <li><a href="#">ABOUT</a></li>
+                            <li><a href="#">COURSE</a></li>
+                            <li><a href="#">BLOG</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </div>
+                    <i class="fa fa-bars" onclick="showMenu()"></i>
+                </nav>
+                <div class="text-box">
+                    <h1>HTML PARALLAX CODING TEST</h1>
+                    <p>Parallax scrolling is a web site trend where the background content (i.e. an image) is moved at a different speed than the foreground content while scrolling.</p>
+                    <a href="" class="hero-btn">Visit Us To Know More</a>
+                </div>
+            </section>
+        </section>
         <section class="container">
             <h1>HTML/CSS PARALLAX EFFECT</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis numquam beatae accusantium dicta sint inventore eius veritatis delectus nemo, dolorem quisquam non iste commodi distinctio reprehenderit dolorum, eligendi minus nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero dolor rerum enim doloribus sapiente rem a architecto delectus incidunt et, quo autem esse nulla ad aliquid tempore, ipsa labore repellat.</p>
@@ -36,5 +59,15 @@
                 </div>
                 <p>Made with <i class="fa fa-heart"></i></p>
         </section>
+        <!-- Javascript to toggle menu  -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
     </body>
 </html>
